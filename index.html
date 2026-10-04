@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Not Every AI Role Is a Coding Role — AI with Unnati</title>
+<meta name="description" content="A free guide by Unnati Tripathi: the AI roles beyond coding, what each one needs, live LinkedIn job links, and Ankaay AI's AI Career Accelerator.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#D02B2F;
+    --red-deep:#B32226;
+    --cream:#FFF8E7;
+    --cream-2:#FAEEDC;
+    --sage-bg:#F3F0DE;
+    --sage:#7F9478;
+    --ink:#1E1E1E;
+    --ink-soft:#4A4644;
+    --line:#E7DDC9;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *,*::before,*::after{box-sizing:inherit}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+  .display{font-family:"Anton","Impact","Arial Narrow Bold",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:1}
+  .eyebrow{font-family:"Anton","Impact",sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:15px;color:var(--red)}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px}
+
+  /* Header */
+  header.site{background:var(--cream);border-bottom:2px solid var(--line);padding:30px 0 22px;text-align:center}
+  header.site .brand{font-size:clamp(28px,6vw,40px);color:var(--red);text-decoration:none}
+  header.site nav{margin-top:14px;display:flex;justify-content:center;flex-wrap:wrap;gap:6px 30px;font-weight:500;font-size:15px;letter-spacing:.06em;text-transform:uppercase}
+  header.site nav a{text-decoration:none;color:var(--ink-soft)}
+  header.site nav a:hover{color:var(--red)}
+
+  /* Hero */
+  .hero{background:var(--red);color:var(--cream);padding:64px 0 56px}
+  .byline{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;font-size:17px;opacity:.95}
+  .chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.13);padding:7px 14px;text-decoration:none;font-family:"Anton",sans-serif;letter-spacing:.12em;font-size:14px;text-transform:uppercase;color:var(--cream)}
+  .chip:hover{background:rgba(255,255,255,.22)}
+  .chip svg{width:14px;height:14px}
+  .tag{display:inline-block;margin-top:34px;background:var(--cream);color:var(--red);padding:9px 16px 7px;font-size:16px;letter-spacing:.14em}
+  .hero h1{font-size:clamp(46px,11vw,96px);margin:22px 0 26px;max-width:12ch}
+  .hero p.lede{font-size:clamp(19px,2.6vw,23px);max-width:40ch;margin:0;color:#FFF3E6}
+  .hero-cta{margin-top:36px;background:var(--cream);color:var(--ink);padding:26px 26px 24px;border-left:6px solid var(--ink);max-width:640px}
+  .hero-cta .label{font-weight:700;font-size:16px}
+  .hero-cta .label strong{color:var(--red)}
+  .hero-cta p{margin:6px 0 18px;font-size:17px;color:var(--ink-soft)}
+  .btn-row{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;background:var(--red);color:var(--cream);text-decoration:none;font-family:"Anton",sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:17px;padding:15px 24px 13px;transition:background .15s}
+  .btn:hover{background:var(--red-deep)}
+  .btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:var(--cream)}
+
+  /* Sections */
+  section.block{padding:70px 0 10px}
+  section.block h2{font-size:clamp(36px,7vw,58px);margin:12px 0 18px}
+  section.block > .wrap > p.intro{max-width:62ch;color:var(--ink-soft);margin:0 0 30px}
+
+  .why{background:var(--sage-bg);border-left:6px solid var(--sage);padding:26px 28px;margin:10px 0 0}
+  .why .eyebrow{color:var(--sage)}
+  .why p{margin:8px 0 0;font-size:18px}
+
+  /* Roles */
+  .roles{display:grid;gap:22px}
+  .role{background:#fff;border:2px solid var(--ink);padding:28px 26px 26px;position:relative}
+  .role.tech{background:var(--cream-2);border-style:dashed}
+  .role h3{font-size:clamp(28px,5vw,38px);margin:6px 0 12px}
+  .role .who{font-size:18px;margin:0 0 14px}
+  .role ul{margin:0 0 20px;padding-left:20px;color:var(--ink-soft)}
+  .role li{margin:4px 0}
+  .role .jobs-label{font-weight:700;font-size:15px;margin:0 0 10px}
+  .role .btn{font-size:15px;padding:12px 18px 10px}
+  .badge{display:inline-block;font-family:"Anton",sans-serif;letter-spacing:.12em;font-size:13px;text-transform:uppercase;padding:4px 10px 3px;background:var(--ink);color:var(--cream)}
+  .badge.red{background:var(--red)}
+
+  /* Steps */
+  .steps{list-style:none;padding:0;margin:0;counter-reset:s;display:grid;gap:0;border-top:2px solid var(--ink)}
+  .steps li{counter-increment:s;display:grid;grid-template-columns:72px 1fr;gap:18px;padding:22px 0;border-bottom:2px solid var(--ink)}
+  .steps li::before{content:counter(s);font-family:"Anton",sans-serif;font-size:52px;line-height:.9;color:var(--red)}
+  .steps h4{font-family:"Anton",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.03em;font-size:24px;margin:0 0 4px}
+  .steps p{margin:0;color:var(--ink-soft)}
+
+  /* CTA band */
+  .cta-band{background:var(--red);padding:70px 0;margin-top:80px}
+  .cta-card{background:var(--cream);padding:34px 28px 32px;margin-bottom:22px}
+  .cta-card:last-child{margin-bottom:0}
+  .cta-card h3{font-size:clamp(30px,6vw,46px);margin:10px 0 14px}
+  .cta-card p{margin:0 0 24px;color:var(--ink-soft);max-width:56ch}
+
+  footer.site{padding:54px 0 60px;text-align:center;color:var(--ink-soft);font-size:16px}
+  footer.site .name{font-family:"Anton",sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:26px;color:var(--ink)}
+  footer.site .title{margin:4px 0 12px}
+  footer.site a{color:var(--red);font-weight:700;text-decoration:none}
+  footer.site .copy{margin-top:26px;font-size:15px}
+
+  @media (min-width:760px){
+    .roles{grid-template-columns:1fr 1fr}
+    .role.tech{grid-column:1 / -1}
+  }
+  @media (max-width:520px){
+    body{font-size:17px}
+    .steps li{grid-template-columns:52px 1fr}
+    .steps li::before{font-size:40px}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <a class="brand display" href="https://www.instagram.com/aiwithunnati/" target="_blank" rel="noopener">AI with Unnati</a>
+  <nav aria-label="Guide sections">
+    <a href="#roles">The roles</a>
+    <a href="#program">The program</a>
+    <a href="#start">Get started</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="byline">
+      <span>A free guide by <strong>Unnati Tripathi</strong></span>
+      <a class="chip" href="https://www.instagram.com/aiwithunnati/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        @aiwithunnati
+      </a>
+    </div>
+
+    <span class="tag display">AI Careers</span>
+    <h1 class="display">Not every AI role is a coding role</h1>
+    <p class="lede">You don't need to learn every tool and framework everyone online is talking about. You need the right mix of skills for the role you're actually targeting. Here's how the main AI roles differ, what each one really needs, and live job links for each.</p>
+
+    <div class="hero-cta">
+      <div class="label">Featured: <strong>Ankaay AI · AI Career Accelerator</strong></div>
+      <p>A 4–6 week one-on-one program that maps your background to the right AI role, then works with you on skills, projects, resume and interview prep.</p>
+      <div class="btn-row">
+        <a class="btn" href="https://topmate.io/ankaayai" target="_blank" rel="noopener">Visit Ankaay AI</a>
+        <a class="btn ghost" href="https://www.instagram.com/ankaayai/" target="_blank" rel="noopener">Ankaay on Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="block" style="padding-top:56px">
+  <div class="wrap">
+    <div class="why">
+      <span class="eyebrow">The thing people miss</span>
+      <p>Python, RAG, MCP, agents, LLM APIs, LLMOps, evals, guardrails, harness engineering — all of it matters. But how deep you go in each depends completely on the role. An AI product manager and an AI engineer need very different depths of the same topics. Sometimes you don't need more information. You need someone to tell you: <em>for your role, focus on this.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- ROLES -->
+<section class="block" id="roles">
+  <div class="wrap">
+    <span class="eyebrow">The roles</span>
+    <h2 class="display">Five AI career paths</h2>
+    <p class="intro">Four of these don't need you to be a full-time coder. Each job button opens LinkedIn's live search, filtered to the past week and sorted by newest, so the postings are always current when you open it.</p>
+
+    <div class="roles">
+
+      <article class="role">
+        <span class="badge red">Non-coding</span>
+        <h3 class="display">AI Product Manager</h3>
+        <p class="who">Decides what AI product gets built, for whom, and how you'll know it's working.</p>
+        <ul>
+          <li>Turning user problems into AI features that are actually feasible</li>
+          <li>Knowing what LLMs, RAG and agents can and can't do</li>
+          <li>Defining evals and success metrics, not just launch dates</li>
+          <li>Great fit if you've done product, business analysis or ops</li>
+        </ul>
+        <p class="jobs-label">Check out the latest jobs listed below:</p>
+        <div class="btn-row">
+          <a class="btn" href="https://www.linkedin.com/jobs/search/?keywords=AI%20Product%20Manager&location=India&f_TPR=r604800&sortBy=DD" target="_blank" rel="noopener">India jobs</a>
+          <a class="btn ghost" href="https://www.linkedin.com/jobs/search/?keywords=AI%20Product%20Manager&location=Worldwide&f_TPR=r604800&sortBy=DD" target="_blank" rel="noopener">Worldwide</a>
+        </div>
+      </article>
+
+      <article class="role">
+        <span class="badge red">Non-coding</span>
+        <h3 class="display">AI Program Manager</h3>
+        <p class="who">Gets AI projects shipped across teams — on time, within risk, and actually adopted.</p>
+        <ul>
+          <li>Coordinating data, engineering, legal and business teams</li>
+          <li>Tracking model rollouts, dependencies and risks</li>
+          <li>Understanding LLMOps and guardrails well enough to plan around them</li>
+          <li>Great fit if you've done project, program or operations management</li>
+        </ul>
+        <p class="jobs-label">Check out the latest jobs listed below:</p>
+        <div class="btn-row">
+          <a class="btn" href="https://www.linkedin.com/jobs/search/?keywords=AI%20Program%20Manager&location=India&f_TPR=r604800&sortBy=DD" target="_blank" rel="noopener">India jobs</a>
+          <a class="btn ghost" href="https://www.linkedin.com/jobs/search/?keywords=AI%20Program%20Manager&location=Worldwide&f_TPR=r604800&sortBy=DD" target="_blank" rel="noopener">Worldwide</a>
+        </div>
+      </article>
+
+      <article class="role">
+        <span class="badge red">Light coding</span>
+        <h3 class="display">AI Consultant</h3>
+        <p class="who">Helps companies figure out where AI fits in their business, then helps them implement it.</p>
+        <ul>
+          <li>Mapping workflows and spotting where automation pays off</li>
+          <li>Building quick prototypes and demos to prove value</li>
+          <li>Explaining agents, RAG and their risks to non-technical clients</li>
+          <li>Great fit if you've done consulting, sales engineering or domain work</li>
+        </ul>
+        <p class="jobs-label">Check out the latest jobs listed below:</p>
+        <div class="btn-row">
+          <a class="btn" href="https://www.linkedin.com/jobs/search/?keywords=AI%20Consultant&location=India&f_TPR=r604800&sortBy=DD" target="_blank" rel="noopener">India jobs</a>
+          <a class="btn ghost" href="https://www.linkedin.com/jobs/search/?keywords=AI%20Consultant&location=Worldwide&f_TPR=r604800&sortBy=DD" target="_blank" rel="noopener">Worldwide</a>
+        </div>
+      </article>
+
+      <article class="role">
+        <span class="badge red">Non-coding</span>
+        <h3 class="display">AI Strategy</h3>
+        <p class="who">Sets the big picture: which AI bets a company makes, how to govern them, and how to measure ROI.</p>
+        <ul>
+          <li>Building AI roadmaps tied to business outcomes</li>
+          <li>AI governance, responsible AI and guardrail policies</li>
+          <li>Build vs buy decisions and vendor evaluation</li>
+          <li>Great fit if you've done strategy, leadership or transformation work</li>
+        </ul>
+        <p class="jobs-label">Check out the latest jobs listed below:</p>
+        <div class="btn-row">
+          <a class="btn" href="https://www.linkedin.com/jobs/search/?keywords=AI%20Strategy&location=India&f_TPR=r604800&sortBy=DD" target="_blank" rel="noopener">India jobs</a>
+          <a class="btn ghost" href="https://www.linkedin.com/jobs/search/?keywords=AI%20Strategy&location=Worldwide&f_TPR=r604800&sortBy=DD" target="_blank" rel="noopener">Worldwide</a>
+        </div>
+      </article>
+
+      <article class="role tech">
+        <span class="badge">Coding track</span>
+        <h3 class="display">AI Engineer</h3>
+        <p class="who">Builds the AI systems themselves — the role most people assume is the only option.</p>
+        <ul>
+          <li>Python, LLM APIs, RAG pipelines, agents and MCP integrations</li>
+          <li>Evals, guardrails, LLMOps and harness engineering in production</li>
+          <li>Great fit if you're a developer, data scientist or CS grad</li>
+        </ul>
+        <p class="jobs-label">Check out the latest jobs listed below:</p>
+        <div class="btn-row">
+          <a class="btn" href="https://www.linkedin.com/jobs/search/?keywords=AI%20Engineer&location=India&f_TPR=r604800&sortBy=DD" target="_blank" rel="noopener">India jobs</a>
+          <a class="btn ghost" href="https://www.linkedin.com/jobs/search/?keywords=AI%20Engineer&location=Worldwide&f_TPR=r604800&sortBy=DD" target="_blank" rel="noopener">Worldwide</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PROGRAM -->
+<section class="block" id="program">
+  <div class="wrap">
+    <span class="eyebrow">Ankaay AI · AI Career Accelerator</span>
+    <h2 class="display">How the program works</h2>
+    <p class="intro">A 4–6 week, one-on-one program built for working professionals moving into AI roles. Ankaay AI has helped with 50+ career transitions so far.</p>
+
+    <ol class="steps">
+      <li><div><h4>Look at your background</h4><p>Most professionals already have many of the skills an AI role needs from their current work. You start by finding those.</p></div></li>
+      <li><div><h4>Pick the role that fits</h4><p>Product, program, consulting, strategy or engineering — matched to where you're coming from and where you want to go.</p></div></li>
+      <li><div><h4>Close the gaps that matter</h4><p>Only the skills your target role needs, at the depth it needs them. No learning everything just because it's trending.</p></div></li>
+      <li><div><h4>Build hands-on projects</h4><p>Real work you can show hiring managers, not just certificates.</p></div></li>
+      <li><div><h4>Fix your resume</h4><p>Reframe your experience in the language AI hiring managers look for.</p></div></li>
+      <li><div><h4>Prep for interviews</h4><p>Walk in able to present yourself with confidence for the specific role.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band" id="start">
+  <div class="wrap">
+
+    <div class="cta-card">
+      <span class="eyebrow">Not sure where you fit?</span>
+      <h3 class="display">Book a free AI career call</h3>
+      <p>Start with a free 30-minute call with Ankaay AI to talk through your background and which AI role makes sense for you.</p>
+      <a class="btn" href="https://topmate.io/ankaayai/2317391" target="_blank" rel="noopener">Book the free call</a>
+    </div>
+
+    <div class="cta-card">
+      <span class="eyebrow">Ready to make the move?</span>
+      <h3 class="display">Join the AI Career Accelerator</h3>
+      <p>Role clarity, the right skills, hands-on projects, resume and interview prep — one-on-one, built around you.</p>
+      <div class="btn-row">
+        <a class="btn" href="https://topmate.io/ankaayai/2317367" target="_blank" rel="noopener">See the accelerator</a>
+        <a class="btn ghost" href="https://topmate.io/ankaayai" target="_blank" rel="noopener">All Ankaay AI sessions</a>
+      </div>
+    </div>
+
+    <div class="cta-card">
+      <span class="eyebrow">Keep learning</span>
+      <h3 class="display">Follow along on Instagram</h3>
+      <p>Ankaay AI shares AI career advice for working professionals. I share free AI guides like this one every week.</p>
+      <div class="btn-row">
+        <a class="btn" href="https://www.instagram.com/ankaayai/" target="_blank" rel="noopener">@ankaayai</a>
+        <a class="btn ghost" href="https://www.instagram.com/aiwithunnati/" target="_blank" rel="noopener">@aiwithunnati</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="name">Unnati Tripathi</div>
+    <div class="title">AI Educator &amp; Content Creator · CEO &amp; Co-Founder, Maester Labs</div>
+    <a href="https://www.instagram.com/aiwithunnati/" target="_blank" rel="noopener">@aiwithunnati</a>
+    <div class="copy">© 2026 Unnati Tripathi. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
